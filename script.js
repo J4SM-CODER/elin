@@ -241,7 +241,9 @@ desktopQuery.addEventListener("change", () => {
 syncDesktopDetailVisibility();
 requestAnimationFrame(ensureDesktopDefaultService);
 
-document.querySelector(".contact-form")?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  alert("Formulario listo para conectar. Por ahora usa WhatsApp o el correo de contacto.");
-});
+const formStatus = document.querySelector("[data-form-status]");
+const searchParams = new URLSearchParams(window.location.search);
+
+if (formStatus && searchParams.get("mensaje") === "enviado") {
+  formStatus.textContent = "Gracias. Recibimos tu mensaje y nos pondremos en contacto contigo.";
+}

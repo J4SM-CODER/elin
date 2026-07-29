@@ -918,6 +918,17 @@ body.service-detail-open {
   border-color: var(--red);
 }
 
+.form-status {
+  margin: 0;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid #238636;
+  background: #eef8f0;
+  color: #165c26;
+  font-weight: 700;
+}
+
+.form-status:empty { display: none; }
+
 .map-block {
   width: 100%;
   height: 340px;
