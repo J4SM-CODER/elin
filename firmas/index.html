@@ -316,7 +316,7 @@
             if (showLegal) {
                 legalNoticeHTML = `
   <tr>
-    <td colspan="3" style="padding-top: 14px; margin-top: 15px;">
+    <td colspan="3" style="padding-top: 14px; margin-top: 15px; outline: none; border: 0;">
       <p style="font-family: Arial, sans-serif; font-size: 9px; color: #8F9CA0; line-height: 1.35; margin: 0; text-align: justify;">
         <strong>ELIN Instalaciones Electro Industrial</strong> &bull; Este mensaje y sus archivos adjuntos son confidenciales y para uso exclusivo del destinatario. Si lo ha recibido por error, por favor notifique al remitente y elimínelo de inmediato.
       </p>
@@ -324,21 +324,21 @@
   </tr>`;
             }
 
-            return `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #283A3E; line-height: 1.4; width: 100%; max-width: 520px; background-color: #ffffff; text-align: left; border-collapse: collapse;">
+            return `<table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; color: #283A3E; line-height: 1.4; width: 100%; max-width: 520px; background-color: #ffffff; text-align: left; border-collapse: collapse; outline: none; border: 0;">
   <tbody>
     <tr>
       <!-- COLUMNA 1: LOGOTIPO DESDE HOSTINGER -->
-      <td valign="top" style="padding-right: 18px; vertical-align: top; width: 170px;">
-        <a target="_blank" style="text-decoration: none; display: block; border: 0;">
-          <img src="${LOGO_REV2_URL}" alt="ELIN" width="160" style="display: block; width: 160px; max-width: 100%; height: auto; border: 0; outline: none;" />
+      <td valign="top" style="padding-right: 18px; vertical-align: top; width: 170px; outline: none; border: 0;">
+        <a target="_blank" style="text-decoration: none; display: block; outline: none; border: 0;">
+          <img src="${LOGO_REV2_URL}" alt="ELIN" width="160" style="display: block; width: 160px; max-width: 100%; height: auto; outline: none; border: 0;" />
         </a>
       </td>
 
       <!-- COLUMNA 2: BARRA SEPARADORA ROJA ELIN -->
-      <td width="2" style="width: 2px; background-color: #B8191D; font-size: 1px; line-height: 1px;">&nbsp;</td>
+      <td width="2" style="width: 2px; background-color: #B8191D; font-size: 1px; line-height: 1px; outline: none; border: 0;">&nbsp;</td>
 
       <!-- COLUMNA 3: DATOS DEL COLABORADOR Y DIRECCIÓN FIJA -->
-      <td valign="top" style="padding-left: 18px; vertical-align: top;">
+      <td valign="top" style="padding-left: 18px; vertical-align: top; outline: none; border: 0;">
         <!-- Nombre Completo -->
         <div style="font-size: 18px; font-weight: bold; color: #283A3E; margin-bottom: 2px; letter-spacing: -0.2px;">
           ${name}
@@ -349,28 +349,28 @@
         </div>
 
         <!-- Tabla Interna de Contacto -->
-        <table cellpadding="0" cellspacing="0" border="0" style="font-size: 14px; color: #283A3E; font-family: Arial, sans-serif;">
+        <table cellpadding="0" cellspacing="0" border="0" style="font-size: 14px; color: #283A3E; font-family: Arial, sans-serif; outline: none; border: 0;">
           <tr>
-            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal; width: 55px;">Correo:</td>
-            <td style="padding-bottom: 3px; padding-left: 4px;">
+            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal; width: 55px; outline: none; border: 0;">Correo:</td>
+            <td style="padding-bottom: 3px; padding-left: 4px; outline: none; border: 0;">
               <a href="mailto:${email}" style="color: #283A3E; text-decoration: none; font-weight: bold;">${email}</a>
             </td>
           </tr>
           <tr>
-            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal;">Teléfono:</td>
-            <td style="padding-bottom: 3px; padding-left: 4px;">
+            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal; outline: none; border: 0;">Teléfono:</td>
+            <td style="padding-bottom: 3px; padding-left: 4px; outline: none; border: 0;">
               <a href="tel:${phoneClean}" style="color: #283A3E; text-decoration: none;">${phone}</a>
             </td>
           </tr>
           <tr>
-            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal;">Web:</td>
-            <td style="padding-bottom: 3px; padding-left: 4px;">
+            <td style="padding-bottom: 3px; color: #6B7B7C; font-weight: normal; outline: none; border: 0;">Web:</td>
+            <td style="padding-bottom: 3px; padding-left: 4px; outline: none; border: 0;">
               <a href="https://www.elin.mx" target="_blank" style="color: #B8191D; text-decoration: none; font-weight: bold;">${STATIC_WEBSITE}</a>
             </td>
           </tr>
           <tr>
-            <td valign="top" style="color: #6B7B7C; padding-top: 0px; font-weight: normal;">Ubicación:</td>
-            <td style="padding-left: 4px; color: #6B7B7C; font-size: 14px; line-height: 1.35;">
+            <td valign="top" style="color: #6B7B7C; padding-top: 0px; font-weight: normal; outline: none; border: 0;">Ubicación:</td>
+            <td style="padding-left: 4px; color: #6B7B7C; font-size: 14px; line-height: 1.35; outline: none; border: 0;">
               ${STATIC_ADDRESS}
             </td>
           </tr>
